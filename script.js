@@ -10,14 +10,17 @@
    Types: dev, creator, both are the three choices on the top form.
           founding-developer and founding-creator are the two founding forms.
 */
-var DEFAULT_FORM = "https://assets.mailerlite.com/jsonp/2710873/forms/201268033421837762/subscribe";
+var CREATORS_FORM = "https://assets.mailerlite.com/jsonp/2710873/forms/201268033421837762/subscribe";
+var DEVELOPERS_FORM = "https://assets.mailerlite.com/jsonp/2710873/forms/201356483787491115/subscribe";
+var FOUNDING_FORM = "https://assets.mailerlite.com/jsonp/2710873/forms/201357096804943067/subscribe";
+var DEFAULT_FORM = CREATORS_FORM;
 
 var FORM_ENDPOINTS = {
-  "dev": DEFAULT_FORM,
-  "creator": DEFAULT_FORM,
-  "both": DEFAULT_FORM,
-  "founding-developer": DEFAULT_FORM,
-  "founding-creator": DEFAULT_FORM
+  "dev": DEVELOPERS_FORM,
+  "creator": CREATORS_FORM,
+  "both": DEVELOPERS_FORM,
+  "founding-developer": FOUNDING_FORM,
+  "founding-creator": FOUNDING_FORM
 };
 
 (function () {
@@ -89,3 +92,7 @@ var FORM_ENDPOINTS = {
     forms[i].addEventListener("submit", handleSubmit);
   }
 })();
+
+  
+    
+    
