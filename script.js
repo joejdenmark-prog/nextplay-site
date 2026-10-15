@@ -93,6 +93,16 @@ var FORM_ENDPOINTS = {
   }
 })();
 
-  
-    
-    
+/* Developer page: if the submission form link hasn't been added yet,
+   show "Submissions open soon" instead of a broken button. */
+(function () {
+  var link = document.querySelector("[data-submit-link]");
+  if (!link) return;
+  var href = link.getAttribute("href") || "";
+  if (href.indexOf("REPLACE_WITH") === 0 || href === "#" || href === "") {
+    var box = document.querySelector("[data-submit-box]");
+    var soon = document.querySelector("[data-submit-soon]");
+    if (box) box.hidden = true;
+    if (soon) soon.hidden = false;
+  }
+})();
