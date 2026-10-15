@@ -580,3 +580,159 @@ h1 {
 [hidden] {
   display: none !important;
 }
+
+/* Developer page */
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.btn-link:hover {
+  color: var(--ink);
+  filter: brightness(0.95);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+}
+
+.section-title {
+  margin: 0 0 32px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+#how .wrap {
+  padding-block: 64px;
+}
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.step {
+  flex: 1 1 260px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+
+.step p {
+  margin: 0;
+  color: var(--soft);
+}
+
+.step-num {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--accent);
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.rights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 56px;
+  padding-block: 72px;
+}
+
+.rights-copy {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.rights-copy .section-title {
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.rights-list {
+  flex: 1 1 420px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rights-list li {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  color: var(--soft);
+}
+
+.rights-list strong {
+  color: var(--ink);
+}
+
+.divider {
+  width: 100%;
+  margin: 8px 0;
+  border: 0;
+  border-top: 1px solid rgba(238, 241, 247, 0.25);
+}
+
+.fine-lead {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.founding-band .btn-link {
+  align-self: flex-start;
+  border-color: var(--accent);
+}
+
+.submit-soon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  border: 2px solid var(--accent);
+  border-radius: 14px;
+}
+
+.submit-soon strong {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.submit-soon span {
+  color: var(--on-dark-soft);
+}
