@@ -3,71 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NextPlay | Indie game clips</title>
-<meta name="description" content="NextPlay is a short-clip app for indie games. Post up to two minutes of gameplay, follow indie devs, and get found. Join the waitlist.">
-<meta property="og:title" content="NextPlay | Indie game clips">
-<meta property="og:description" content="Post indie game clips, follow indie devs, and get found. Join the NextPlay waitlist.">
+<title>NextPlay for Game Developers | Submit your clips</title>
+<meta name="description" content="We're launching NextPlay with indie games on it. Send us a few clips of your game and be featured when the app opens.">
+<meta property="og:title" content="NextPlay for Game Developers">
+<meta property="og:description" content="We're launching with indie games. Send us a few clips of yours and be featured when the app opens.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#eef1f7">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Crect width='5' height='5' fill='%2315182E'/%3E%3Crect x='7' width='5' height='5' fill='%23FF5B2E'/%3E%3Crect y='7' width='5' height='5' fill='%23FF5B2E'/%3E%3Crect x='7' y='7' width='5' height='5' fill='%2315182E'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Pixelify+Sans:wght@500;600&display=swap">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 <header class="wrap topbar">
-  <a class="brand" href="index.html" aria-label="NextPlay home">
+  <a class="brand" href="index.html" aria-label="NextPlay developer page home">
     <svg width="28" height="28" viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true"><rect x="0" y="0" width="5" height="5" fill="#15182E"/><rect x="7" y="0" width="5" height="5" fill="#FF5B2E"/><rect x="0" y="7" width="5" height="5" fill="#FF5B2E"/><rect x="7" y="7" width="5" height="5" fill="#15182E"/></svg>
     <span class="brand-name">NextPlay</span>
+    <span class="badge">For devs</span>
   </a>
-  <a class="topbar-link" href="devs/index.html">Making a game? Developer page</a>
+  <a class="topbar-link" href="../index.html">Just here to watch? Main page</a>
 </header>
 
 <main>
   <section class="wrap hero">
     <div class="hero-copy">
-      <p class="eyebrow">Waitlist open</p>
-      <h1>Your indie game clips, in front of people who <span class="mark">play indie games.</span></h1>
-      <p class="lede">NextPlay is a short-clip app built for indie games. Post up to two minutes of gameplay, follow the people making the games you want to play, and get found before the big studios drown you out.</p>
+      <p class="eyebrow">An invitation for indie developers</p>
+      <h1>We're launching with indie games. <span class="mark">Yours could be one of the first.</span></h1>
+      <p class="lede">NextPlay is a home for short indie game clips, made for the people building games and the people playing them. Send us a few clips of your game before launch, up to two minutes, and we'll feature it when the app opens.</p>
 
-      <div class="signup">
-        <form class="form" data-signup>
-          <input type="hidden" name="page" value="players">
-          <input type="hidden" name="source" value="hero">
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
-          <fieldset class="roles">
-            <legend>I'm a</legend>
-            <div class="pills">
-              <label class="pill"><input type="radio" name="role" value="creator" checked><span>Player / clip creator</span></label>
-              <label class="pill"><input type="radio" name="role" value="dev"><span>Game developer</span></label>
-              <label class="pill"><input type="radio" name="role" value="both"><span>Both</span></label>
-            </div>
-          </fieldset>
-          <div class="row">
-            <label class="sr-only" for="email-hero">Email address</label>
-            <input id="email-hero" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
-            <button class="btn" type="submit">Join the waitlist</button>
-          </div>
-          <p class="fine">We'll email you once when it opens. Nothing else.</p>
-          <p class="form-error" role="alert" hidden></p>
-        </form>
-        <div class="success" role="status" tabindex="-1" hidden>
-          <strong>You're on the list.</strong>
-          <span>We'll email you when NextPlay opens. Know a dev or clip creator who should be here too? Send them this page.</span>
-        </div>
+      <div class="cta-row">
+        <a class="btn btn-link" href="#submit">Submit your clips</a>
+        <a class="learn-more" href="#how">How it works <span aria-hidden="true">&darr;</span></a>
       </div>
-
-      <a class="learn-more" href="#founding">Want to be a founding creator? Learn more <span aria-hidden="true">&darr;</span></a>
     </div>
 
     <div class="clip">
       <div class="clip-head">
         <div class="avatar" aria-hidden="true">P</div>
         <div class="clip-who">
-          <strong>@pixelhollow</strong>
-          <span>Hollow Depths &middot; example clip</span>
+          <strong>Hollow Depths</strong>
+          <span>Featured developer &middot; example clip</span>
         </div>
       </div>
       <div class="clip-frame">
@@ -89,55 +66,83 @@
         <span class="timecode">0:42 / 1:58</span>
       </div>
       <div class="scrub"><div></div></div>
-      <div class="tags"><span>#roguelike</span><span>#devlog</span><span>#solodev</span></div>
-      <p class="comment"><strong>@marrow</strong> the dodge at 0:42 is so clean. What engine is this?</p>
+      <div class="tags"><span>#roguelike</span><span>#devlog</span><span>#wishlistnow</span></div>
+      <p class="comment"><strong>@marrow</strong> Just wishlisted. Is the dodge window tighter in the full build?</p>
     </div>
   </section>
 
-  <div class="features-band">
-    <section class="wrap features" aria-label="What you can do on NextPlay">
-      <div class="feature">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#15182E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/></svg>
-        <h2>Clips up to 2 minutes</h2>
-        <p>A boss fight, a new build, a bug that turned into a feature. Short enough to watch, long enough to show what the game feels like.</p>
-      </div>
-      <div class="feature">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#15182E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.4 3.2-5.5 6.5-5.5s5.9 2.1 6.5 5.5"/><path d="M16 4.8a3.5 3.5 0 0 1 0 6.4"/><path d="M18 14.8c1.9.7 3.2 2.3 3.5 5.2"/></svg>
-        <h2>Meet other indie devs</h2>
-        <p>Follow the people building the games you'd play. Get feedback from others who ship their own work.</p>
-      </div>
-      <div class="feature">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#15182E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>
-        <h2>Get found while you're small</h2>
-        <p>A feed built around indie titles, so a brand-new game isn't buried under big studio releases.</p>
-      </div>
+  <div class="features-band" id="how">
+    <section class="wrap" aria-labelledby="how-title">
+      <h2 class="section-title" id="how-title">How it works</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Send us a few clips</h3>
+          <p>Gameplay, a devlog, a trailer cut. Anything up to two minutes that shows what your game is like.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>We check in with you</h3>
+          <p>We look at your clips, confirm you're happy for us to post them, and agree how you want to be credited.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>You're on the app at launch</h3>
+          <p>Your clip is live when NextPlay opens, with your name and a link to your game, so players can find you.</p>
+        </li>
+      </ol>
     </section>
   </div>
 
-  <div class="founding-band" id="founding">
-    <section class="wrap founding" aria-labelledby="founding-title">
+  <section class="wrap rights" aria-labelledby="rights-title">
+    <div class="rights-copy">
+      <p class="eyebrow">Your game, your terms</p>
+      <h2 class="section-title" id="rights-title">What you get, and what stays yours</h2>
+    </div>
+    <ul class="rights-list">
+      <li><strong>Credit and a link.</strong> Your name, your game and a link to your page or store go with every clip.</li>
+      <li><strong>It stays yours.</strong> You keep all rights to your clip and your game. We only post it with your say-so.</li>
+      <li><strong>Take it down any time.</strong> Ask and we'll remove it, no questions.</li>
+      <li><strong>A founding developer spot.</strong> Early access, a founding badge, and a direct line to the two people building NextPlay.</li>
+    </ul>
+  </section>
+
+  <div class="founding-band" id="submit">
+    <section class="wrap founding" aria-labelledby="submit-title">
       <div class="founding-copy">
-        <p class="eyebrow">Founding creators</p>
-        <h2 id="founding-title">The first small group on the app starts first.</h2>
-        <p>We're inviting a small number of indie devs and clip creators before launch. You get early access, a founding badge, and a direct line to the two people building it.</p>
+        <p class="eyebrow">Submit your clips</p>
+        <h2 id="submit-title">Send us a few clips of your game.</h2>
+        <p>It takes about two minutes. You'll tell us your game, link your clips, and confirm we can post them.</p>
       </div>
       <div class="founding-signup">
+        <div data-submit-box>
+          <a class="btn btn-link" data-submit-link href="REPLACE_WITH_FORM_LINK" target="_blank" rel="noopener">Open the submission form</a>
+          <p class="fine">Opens in a new tab. Send as many as you like.</p>
+        </div>
+        <div class="submit-soon" data-submit-soon hidden>
+          <strong>Submissions open soon.</strong>
+          <span>Leave your email below and we'll message you the moment they do.</span>
+        </div>
+
+        <hr class="divider">
+
         <form class="form" data-signup>
-          <input type="hidden" name="page" value="players">
-          <input type="hidden" name="source" value="founding">
-          <input type="hidden" name="role" value="founding-creator">
+          <input type="hidden" name="page" value="devs">
+          <input type="hidden" name="source" value="devs-updates">
+          <input type="hidden" name="role" value="founding-developer">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+          <p class="fine fine-lead">Not ready to send clips? Get a note when it's time.</p>
           <div class="row">
-            <label class="sr-only" for="email-founding">Email address</label>
-            <input id="email-founding" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
-            <button class="btn" type="submit">Claim a founding spot</button>
+            <label class="sr-only" for="email-devs">Email address</label>
+            <input id="email-devs" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+            <button class="btn" type="submit">Keep me posted</button>
           </div>
-          <p class="fine">We'll email you before launch so you can get in early.</p>
+          <p class="fine">We'll only email you about NextPlay and your clip.</p>
           <p class="form-error" role="alert" hidden></p>
         </form>
         <div class="success" role="status" tabindex="-1" hidden>
-          <strong>Founding spot saved.</strong>
-          <span>We'll email you before launch so you can get in early.</span>
+          <strong>You're on the list.</strong>
+          <span>We'll email you when it's time to send your clip.</span>
         </div>
       </div>
     </section>
@@ -146,9 +151,9 @@
 
 <footer class="wrap footer">
   <span>&copy; 2026 NextPlay</span>
-  <a href="devs/index.html">Making a game? See the developer page</a>
+  <a href="../index.html">Just here to watch? See the main page</a>
 </footer>
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
